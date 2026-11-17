@@ -5,35 +5,42 @@
     "name": "普罗旺斯煎饼果子"
   },
   "category": "玩法",
-  "changelog": "小行星带怪改为在本星系的小行星带中随机出现，不再每个矿带固定刷；清掉后该矿带约 20 分钟冷却。\n公共矿物异常只刷第一组，清掉后同一位面不再刷；换新异常后才会重新有第一组。\n战斗异常、任务、死亡空间、深渊、家园行动不受影响。\n不改变掉落与刷怪概率配置。",
+  "changelog": "适配261115.2服务端",
   "conflicts": [],
   "delisted": false,
-  "description": "矿带与矿物异常的怪被清掉后，从清怪时刻开始计算重刷间隔；矿石异常站点按正式服时间刷新；计时写入磁盘，服务端重启后保留。不改变掉落与概率配置。",
+  "description": "按实际逻辑更新了小行星矿带，异常矿带的刷怪逻辑，同时更新了异常矿带的刷新逻辑",
   "displayName": "矿带刷怪修复",
   "downloadUrls": [
     {
       "mirror": "github",
       "priority": 1,
-      "url": "https://github.com/jealous123456789/evejs-mod-belt-respawn-cooldown/releases/download/v1.0.1/belt-respawn-cooldown-1.0.1.zip"
+      "url": "https://github.com/jealous123456789/evejs-mod-belt-respawn-cooldown/releases/download/v1.0.2/belt-respawn-cooldown-1.0.2.zip"
     }
   ],
   "evejsVersions": [
-    "261108.x"
+    "261108.x",
+    "261115.x"
   ],
   "featured": false,
-  "highlights": [],
+  "highlights": [
+    "小行星带怪改为在本星系矿带中随机出现，不是每个矿带固定刷；清掉后该矿带约 20 分钟冷却，计时会保存。",
+    "公共矿物异常每个实例只刷第一组；清掉后同一位面不再刷，等矿采完换成新异常后，新异常才重新有第一组。",
+    "矿石异常站点按类型刷新：新矿点为 1 小时、4 小时 20 分、10 小时；旧式站点为 1/2/3/4/5 小时；默克石为 8/12 小时；边境稀有立即刷新；没有明确大小的普通异常约 2 小时。"
+  ],
   "history": [],
   "id": "belt-respawn-cooldown",
-  "publishedAt": "2026-11-13",
-  "readme": [],
+  "publishedAt": "2026-11-17",
+  "readme": [
+    "小行星带怪改为在本星系矿带中随机出现，不是每个矿带固定刷；清掉后该矿带约 20 分钟冷却，计时会保存。\n公共矿物异常每个实例只刷第一组；清掉后同一位面不再刷，等矿采完换成新异常后，新异常才重新有第一组。\n矿石异常站点按类型刷新：新矿点为 1 小时、4 小时 20 分、10 小时；旧式站点为 1/2/3/4/5 小时；默克石为 8/12 小时；边境稀有立即刷新；没有明确大小的普通异常约 2 小时。"
+  ],
   "repo": "https://github.com/jealous123456789/evejs-mod-belt-respawn-cooldown",
   "requiresRestart": true,
-  "sha256": "35349c288274a38263e319ac60fc5884d33d19527f1df3326cdaa43e38735051",
-  "sizeBytes": 28440,
+  "sha256": "465c01a61d2940094bf081793712dc2a5c856db4477d81b90b7695117e61f7d4",
+  "sizeBytes": 29658,
   "tags": [
     "矿带",
     "刷新",
     "重刷"
   ],
-  "version": "1.0.1"
+  "version": "1.0.2"
 }
